@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+
+    <!-- Google Material Icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Music Player -->
+      <div class="top_bar">
+        <i class="material-icons">expand_more</i>
+        <span>Music Player</span>
+        <i class="material-icons">more_horiz</i>
+      </div>
+      <div class="img_area">
+        <img src="" alt="" />
+      </div>
+      <div class="song_details">
+        <p class="name"></p>
+        <p class="artist"></p>
+      </div>
+      <div class="progress_area">
+        <div class="progress_bar">
+          <audio id="audio" src=""></audio>
+        </div>
+        <div class="timer">
+          <span class="current">0:00</span>
+          <span class="duration"></span>
+        </div>
+      </div>
+      <div class="controls">
+        <i id="repeatPlaylist" class="material-icons" title="Playlist Looped">repeat</i>
+        <i id="prev" class="material-icons" title="Prev">skip_previous</i>
+        <div class="play_pause">
+          <i class="material-icons" title="Play">play_arrow</i>
+        </div>
+        <i id="next" class="material-icons" title="Next">skip_next</i>
+        <i id="moreMusic" class="material-icons" title="Music Track">queue_music</i>
+      </div>
+
+      <!-- Music Playlist -->
+      <div class="music_list">
+        <div class="header">
+          <div class="row">
+            <i class="material-icons">queue_music</i>
+            <span>Music List</span>
+          </div>
+          <i id="close" class="material-icons">close</i>
+        </div>
+        <ul></ul>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/js/music.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
